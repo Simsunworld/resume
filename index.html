@@ -7,70 +7,104 @@
     <meta name="keywords" content="syimyk, cv, resume">
     <meta name="description" content="Это сайт - резюме Сыймыка Суйунбекова">
     <title>Syimyk Resume</title>
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+
+    <div class="container">
     
-    <img src="avatar.jpg" alt="Суйунбеков Сыймык" width="200">
+        <div class="info">
 
-    <h1>Сыймык Суйунбеков</h1>
+            <img src="avatar.jpg" alt="Суйунбеков Сыймык" class="avatar">
 
-    <p>Я <strong>графический и UX/UI</strong> дизайнер который разработал много <strong>проектов</strong></p>
+            <div class="info-text">
+                <h1>Сыймык Суйунбеков</h1>
 
-    <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
+                    <p>Я <strong>графический и UX/UI</strong> дизайнер который разработал много <strong>проектов</strong></p>
 
-    <h4>Список социальных сетей:</h4>
+                    <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
 
-    <a href="https://www.instagram.com/simsunworld/" target="_blank">Instagram</a>
-    |
-    <a href="https://www.t.me/simsunworld" target="_blank">Telegram</a>
-    |
-    <a href="https://www.wa.me/+79017093893" target="_blank">WhatsApp</a>
+                <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
+                    <a href="https://www.instagram.com/simsunworld/" target="_blank">Instagram</a>
+        |
+                    <a href="https://www.t.me/simsunworld" target="_blank">Telegram</a>
+        |
+                    <a href="https://www.wa.me/+79017093893" target="_blank">WhatsApp</a>
 
-    <ol>
-        <li>Путешествия</li>
-        <li>Блоггинг</li>
-        <li>Горные лыжи</li>
-        <li>ММА</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </thead>
-
-        <tbody>
-            <td>Sanarip</td>
-            <td>UI/UX</td>
-            <td>2021-2022</td>
-        </tbody>
-    </table>
-
-    <h2>Связаься со мной</h2>
-
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш E-mail</label>
-            <input type="email" id="email" placeholder="Введите E-mail">
+        
+
+        
+        <div class="card bg-green">
+        <h2>Мои хобби</h2>
+            <ol>
+                <li>Путешествия</li>
+                <li>Блоггинг</li>
+                <li>Горные лыжи</li>
+                <li>ММА</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="message">Сообщение</label>
-            <br>
-            <textarea name="" id="message" cols="30" rows="3" placeholder="Введите сообщение..."></textarea>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+
+            <table>
+                <thead>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </thead>
+
+                <tbody>
+                    <td>Sanarip</td>
+                    <td>UI/UX</td>
+                    <td>2021-2022</td>
+                </tbody>
+            </table>
         </div>
 
-    </form>
+        <div class="card bg-yellow">
+            <h2>Мой сайт</h2>
+
+            <ul>
+                <li>
+                    <a href="http://simsundes.tilda.ws/">Мой собственный Веб-сайт</a>
+                </li>
+            </ul>
+        </div>
+
+        <form action="/" class="form">
+            <h2>Связаься со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш E-mail</label>
+                        <input type="email" id="email" placeholder="Введите E-mail">
+                    </div>
+
+                </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea name="" id="message" cols="30" rows="3" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Отправить">
+
+        </form>
+
+    </div>
 
 </body>
 </html>
